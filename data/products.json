@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "price": 25,
+    "category": "Fruit",
+    "description": "Crisp and juicy red apples.",
+    "image": "/images/apple.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "price": 15,
+    "category": "Fruit",
+    "description": "Sweet ripe bananas rich in potassium.",
+    "image": "/images/banana.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mango",
+    "price": 40,
+    "category": "Fruit",
+    "description": "Sweet tropical mangoes.",
+    "image": "/images/mango.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Carrot",
+    "price": 18,
+    "category": "Vegetable",
+    "description": "Fresh crunchy orange carrots.",
+    "image": "/images/carrot.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tomato",
+    "price": 20,
+    "category": "Vegetable",
+    "description": "Ripe tomatoes great for salads.",
+    "image": "/images/tomato.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Broccoli",
+    "price": 35,
+    "category": "Vegetable",
+    "description": "Green broccoli packed with nutrients.",
+    "image": "/images/broccoli.jpg"
+  }
+]

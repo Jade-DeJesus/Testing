@@ -1,0 +1,4 @@
+body { background-color:#F9FFF9; font-family: 'Poppins', sans-serif; }
+a.nav-link.active{ font-weight:600; text-decoration:underline; }
+.navbar-brand{ font-size:1.25rem; }
+.container{ max-width:1100px; }

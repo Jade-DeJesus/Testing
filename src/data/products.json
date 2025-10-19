@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "price": 25,
+    "category": "Fruit",
+    "description": "Crisp and juicy red apples.",
+    "image": "apple.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "price": 15,
+    "category": "Fruit",
+    "description": "Sweet ripe bananas rich in potassium.",
+    "image": "banana.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mango",
+    "price": 40,
+    "category": "Fruit",
+    "description": "Sweet tropical mangoes.",
+    "image": "mango.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Durian",
+    "category": "Fruits",
+    "price": 250,
+    "description": "King of fruits, premium quality",
+    "image": "durian.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Atis",
+    "category": "Fruits",
+    "price": 80,
+    "description": "Sweet sugar apple, locally grown",
+    "image": "atis.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Orange",
+    "category": "Fruits",
+    "price": 100,
+    "description": "Juicy oranges packed with vitamin C",
+    "image": "orange.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Onion",
+    "category": "Vegetables",
+    "price": 60,
+    "description": "Fresh red onions from local farms",
+    "image": "onion.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Garlic",
+    "category": "Vegetables",
+    "price": 180,
+    "description": "Aromatic garlic bulbs",
+    "image": "garlic.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Potato",
+    "category": "Vegetables",
+    "price": 55,
+    "description": "Versatile potatoes for any dish",
+    "image": "potato.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Carrot",
+    "price": 18,
+    "category": "Vegetable",
+    "description": "Fresh crunchy orange carrots.",
+    "image": "carrot.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Tomato",
+    "price": 20,
+    "category": "Vegetable",
+    "description": "Ripe tomatoes great for salads.",
+    "image": "tomato.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Broccoli",
+    "price": 35,
+    "category": "Vegetable",
+    "description": "Green broccoli packed with nutrients.",
+    "image": "broccoli.jpg"
+    
+  }
+]

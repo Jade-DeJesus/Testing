@@ -1,3 +1,4 @@
+
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../context/CartContext';
 
@@ -11,7 +12,6 @@ export default function Checkout() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if(!form.name || !form.address) { setMsg('Please fill in required fields'); return; }
-    // fake order
     clearCart();
     setMsg('Order placed! Thank you.');
   };

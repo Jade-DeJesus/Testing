@@ -1,6 +1,9 @@
+
 import React, { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
+import images from '../data/imageMap';
+
 
 export default function Cart() {
   const { items, removeFromCart, updateQty, clearCart, total } = useContext(CartContext);
@@ -22,7 +25,7 @@ export default function Cart() {
           <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
             <div style={{maxWidth: '60%'}}>
               <div className="d-flex align-items-center gap-3">
-                <img src={item.image} alt={item.name} style={{width:64,height:64,objectFit:'cover'}} className="rounded" />
+                <img src={images[item.image]} alt={item.name} style={{ width: 64, height: 64, objectFit: "cover" }} className="rounded"/>
                 <div>
                   <strong>{item.name}</strong><br/>
                   <small className="text-muted">₱{item.price}</small>

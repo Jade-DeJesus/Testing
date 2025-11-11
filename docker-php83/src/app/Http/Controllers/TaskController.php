@@ -32,6 +32,7 @@ class TaskController extends Controller
             'title' => 'required|string|max:255',
             'description' => 'nullable|string',
             'status' => 'nullable|string|in:pending,completed',
+            'due_date' => 'nullable|date',
         ]);
 
         $task = Task::create($validated);

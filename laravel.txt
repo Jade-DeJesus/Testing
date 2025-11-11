@@ -1,0 +1,55 @@
+1. to create Laravel project use:
+	docker-compose exec app composer create-project laravel/laravel (appname)
+
+2. move all the file inside of the (appname) to the src folder.
+
+3. edit the .env file to:
+	DB_CONNECTION=MySQL
+	DB_HOST=db
+	DB_PORT=3306
+	DB_DATABASE=laraveldb (this is changeable depends on what db you are using)
+	DB_USERNAME=root
+	DB_PASSWORD=rootpassword
+4. try to access your laravelapp with the php-app in the docker app. click the port.
+if error shows then use this codes for permission:
+	docker-compose exec app chmod -R 755 storage bootstrap/cache
+then:
+	docker-compose exec appchown -R www-data:www-data storage bootstrap/cache
+refresh the page and it should be displaying Laravel.
+
+5. you can create make a model|controller|migration using:
+	docker-compose exec app php artisan make:model ModelName
+	docker-compose exec app php artisan make:controller NameController
+	docker-compose exec app php artisan make:migration create_table_name
+or just simply:
+	docker-compose exec app php artisan make:model Product -mcr
+
+in editing the model you have to use:
+	use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+6. After making migration then run migrate using:
+	docker-compose exec app php artisan migrate
+your table should reflect on the phpmyadmin
+
+7. if you want to populate your table then make a seeder using:
+	docker-compose exec app php artisan make:seeder SeederName
+in editing seeder you need to use:
+	use App\Models\ModelName;
+
+8. after making a seeder u also need to make a factory by using:
+	docker-compose exec app php artisan make:factory FactoryName --model=ModelName
+
+9. to seed run this first:
+	docker-compose exec app php artisan migrate:fresh
+then:
+	docker-compose exec app php artisan db:seed
+
+then your table should be filled with the seeder you made.
+
+
+
+
+
+
+
+Rollback migration: php artisan migrate:rollback
